@@ -1,0 +1,21 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.card {
+    color: #ffffff;
+    background-color: #3c3c3c;
+
+    /*animation-name: cardColorChange;*/
+    animation-duration: 2s;
+}
+
+.card .card {
+    background-color: #000000;
+}
+
+@keyframes cardColorChange {
+    from {background-color: #3c3c3c;}
+    to {background-color: #000000;}
+}
