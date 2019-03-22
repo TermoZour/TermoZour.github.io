@@ -4,94 +4,61 @@ html {
 }
 
 body {
-    color: white;
-    background: url('../images/background.jpg') no-repeat fixed top;
-    background-size: cover;
+    color: black;
+    background: white;
     width: 100%;
-    height: calc(100% - 56px); /* height of the navbar */
+    height: calc(100% - 56px);
+    /* height of the navbar */
     font-family: Arial, Helvetica, serif;
     letter-spacing: 0.02em;
     font-weight: 400;
 }
 
-div.row {
-    background: inherit; /* THIS IS REALLY IMPORTANT, without it the blur doesn't work */
-    margin: 0 auto; /* CENTERS CONTAINER HORIZONTALLY */
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box; /* PREVENTS OVERLAPPING PADDING/MARGINS */
+#videoBg {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
 }
 
-div.col {
-    background: inherit; /* THIS IS REALLY IMPORTANT, without it the blur doesn't work */
-    margin: 0 auto; /* CENTERS CONTAINER HORIZONTALLY */
-    height: 100%;
+.container {
+    position: relative;
+    height: auto;
     width: 100%;
-    box-sizing: border-box; /* PREVENTS OVERLAPPING PADDING/MARGINS */
+    margin: 0 auto;
+    /* CENTERS CONTAINER HORIZONTALLY */
 }
 
-/* The container that holds all content */
-div#container {
-    background: inherit; /* THIS IS REALLY IMPORTANT, without it the blur doesn't work */
-    margin: 0 auto; /* CENTERS CONTAINER HORIZONTALLY */
-    height: 100%;
-    width: 100%;
-    box-sizing: border-box; /* PREVENTS OVERLAPPING PADDING/MARGINS */
-}
-
-/* The cards-container div is basically the container group that holds boxes */
 div#cards-container {
-    background: inherit; /* THIS IS REALLY IMPORTANT, without it the blur doesn't work */
-    max-width: 100%; /* THIS IS THE MAX-WIDTH OF THE CARDS */
-    margin: 0 auto; /* THIS CENTERS THE CONTAINER HORIZONTALLY */
-    align-content: center;
+    max-width: 100%;
+    /* THIS IS THE MAX-WIDTH OF THE CARDS */
 }
 
-/* this is where the content lives */
-div.box{
-    height: 100%;
-    border-radius: 5px;
-    overflow: hidden; /* PREVENTS THE BLUR EFFECT FROM OVERFLOWING THE BOX */
+div.card {
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
     color: white;
-    margin: 5px; /* MARGIN AROUND THE BOX */
-}
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 5px;
 
-/* this creates the blur-container */
-div.box-blur{
-    position: relative; /* parent of the pseudo :before which is absolute */
-    background: inherit; /* THIS IS REALLY IMPORTANT, without it the blur doesn't work */
-    width: auto; /* IMPORTANT FOR THE BOX TO BE A DYNAMIC WIDTH */
-    height: auto; /* IMPORTANT FOR THE BOX TO BE A DYNAMIC HEIGHT */
-    overflow: hidden; /* PREVENTS THE BLUR EFFECT FROM OVERFLOWING THE BOX */
-}
-
-/* this will apply the blur effect */
-div.box-blur:before{
-    content: '';
-    position: absolute; /* THIS MAKES SURE THE BLUR STARTS AT THE EDGES OF THE BOX DIV */
-    background: inherit; /* THIS IS REALLY IMPORTANT, without it the blur doesn't work */
-    width: 150%; /* make sure this is always a bit wider than the actual div above, to fill the entire div, you'll see what I mean by changing it to 100% */
-    height: 150%; /* make sure this is always a bit wider than the actual div above, to fill the entire div */
-    left: -25px; /* REMOVES THE HARD BLUR EDGES FROM THE DIV, WHERE THE EFFECT IS THE STRONGEST */
-    top: -25px; /* REMOVES THE HARD BLUR EDGES FROM THE DIV, WHERE THE EFFECT IS THE STRONGEST */
-    box-shadow: inset 0 0 0 2000px rgba(0,0,0,0.2); /* the blur color and opacity */
-    filter: blur(15px); /* the blur strength */
-
+    backdrop-filter: blur(15px);
     animation-name: fade-blur;
     animation-duration: 5s;
 }
 
 /* The inner div for content inside a box */
+
 div.box-inner {
-    position: relative; /* This is important to actually show the content */
-    overflow: hidden; /* prevents content from overflowing in the box */
+    position: relative;
+    overflow: hidden;
 }
 
-div.box-inner .title {
+div.card-header {
     font-size: 22px;
 }
 
-div.box-inner .title:after { /* adds a little line under the title, just for fun */
+div.box-inner .title:after {
+    /* adds a little line under the title, just for fun */
     content: '';
     display: block;
     margin: 10px auto 10px 0;
@@ -100,14 +67,16 @@ div.box-inner .title:after { /* adds a little line under the title, just for fun
 }
 
 div.box-inner img {
-    display: block; /* removes unwanted space around img */
+    display: block;
+    /* removes unwanted space around img */
     float: left;
     padding: 0;
     margin: 0;
 }
 
 iframe#video {
-    display: block; /* removes unwanted space around img */
+    display: block;
+    /* removes unwanted space around img */
     float: left;
     padding: 0;
     margin: 0;
@@ -117,7 +86,8 @@ iframe#video {
 }
 
 image {
-    display: block; /* removes unwanted space around img */
+    display: block;
+    /* removes unwanted space around img */
     float: left;
     padding: 0;
     margin: 0;
@@ -129,7 +99,12 @@ div.box-inner .content {
 }
 
 /* ANIMATIONS WOOHOO */
+
 @keyframes fade-blur {
-    from {filter: blur(0px);}
-    to {filter: blur(15px);}
-  }
+    from {
+        backdrop-filter: blur(0px);
+    }
+    to {
+        backdrop-filter: blur(15px);
+    }
+}

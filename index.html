@@ -22,70 +22,35 @@
 
 <body>
     <div id="header">
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Rasismul</a>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand disabled" href="index.html">Rasismul</a>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <ul class="navbar-nav mr-auto">
-                    <a class="nav-item nav-link active" href="#">Acasă</a>
+                    <a class="nav-item nav-link active disabled" href="#">Acasă</a>
                     <a class="nav-item nav-link" href="personalitati.html">Personalități</a>
                     <!-- <a class="nav-item nav-link disabled" href="#">Disabled</a> -->
                 </ul>
             </div>
         </nav>
     </div>
-    <div id="container" class="container-fluid">
+
+    <video autoplay muted loop id="videoBg">
+        <source src="videos/bg-video.mp4" type="video/mp4">
+    </video>
+
+    <div class="container">
         <h1>De ce suntem rasiști ?</h1>
 
         <div id="cards-container">
-            <div class="box-blur box">
-                <div class="box-inner p-3">
-                    <div class="title">Din cauza prejudecăților</div>
-                    <div class="content">
-                        În general prin prejudecată se înţelege o părere greşită pe care cineva şi-o face despre un
-                        lucru pe care îl cunoaşte
-                        doar superficial. În sociologie a avea prejudecăţi înseamnă:
-                        <ul>
-                            <li>a avea o părere lipsită de temei despre cineva</li>
-                            <li>să judeci o persoanăîn funcţie de părerea ta şi nu cum este ea cu adevărat</li>
-                            <li>să accepţi sau să respingi acea persoană potrivit judecăţii pe care o ai</li>
-                            <li>să tratezi persoanele prietenos sau duşmănos în funcţie de prejudecăţile tale</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="box-blur box">
-                <div class="box-inner p-3">
-                    <div class="title">Din cauza ... .</div>
-                    <div class="content">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et
-                        dolore magna aliqua. Est pellentesque elit ullamcorper dignissim. Feugiat vivamus at augue eget
-                        arcu. Et
-                        magnis dis parturient montes nascetur ridiculus mus mauris. Tincidunt vitae semper quis lectus
-                        nulla at
-                        volutpat diam. Sit amet consectetur adipiscing elit. Nulla aliquet porttitor lacus luctus
-                        accumsan
-                        tortor. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Sollicitudin ac orci
-                        phasellus egestas tellus. Semper viverra nam libero justo laoreet sit. Nunc eget lorem dolor sed
-                        viverra. Egestas dui id ornare arcu odio ut. Nec feugiat nisl pretium fusce. Augue interdum
-                        velit
-                        euismod in pellentesque massa placerat. Euismod quis viverra nibh cras pulvinar mattis. Amet
-                        tellus cras
-                        adipiscing enim eu turpis. Gravida rutrum quisque non tellus orci ac auctor augue. Ornare aenean
-                        euismod
-                        elementum nisi quis eleifend quam adipiscing vitae. Id aliquet risus feugiat in ante metus
-                        dictum at
-                        tempor. Sit amet consectetur adipiscing elit pellentesque.
-                    </div>
-                </div>
-            </div>
-            <div class="box-blur box">
-                <div class="box-inner p-3">
-                    <div class="title">Ce este rasismul ?</div>
+            <div class="card">
+                <div class="card-header">Ce este rasismul ?</div>
+                <div class="card-body p-3">
                     <div class="content">
                         Rasismul este procesul de discriminare datorat credințelor și ideologiilor,
                         produse în secolele XIX și XX de către francezii Jules Soury, Joseph Arthur de Gobineau și
@@ -111,9 +76,52 @@
                     </div>
                 </div>
             </div>
-            <div class="box-blur box">
-                <div class="box-inner p-3">
-                    <div class="title">Some new title</div>
+
+            <div class="card">
+                <div class="card-header">Din cauza prejudecăților</div>
+                <div class="card-body p-3">
+                    <div class="content">
+                        În general prin prejudecată se înţelege o părere greşită pe care cineva şi-o face despre un
+                        lucru pe care îl cunoaşte
+                        doar superficial. În sociologie a avea prejudecăţi înseamnă:
+                        <ul>
+                            <li>a avea o părere lipsită de temei despre cineva</li>
+                            <li>să judeci o persoanăîn funcţie de părerea ta şi nu cum este ea cu adevărat</li>
+                            <li>să accepţi sau să respingi acea persoană potrivit judecăţii pe care o ai</li>
+                            <li>să tratezi persoanele prietenos sau duşmănos în funcţie de prejudecăţile tale</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Din cauza ... .</div>
+                <div class="card-body p-3">
+                    <div class="content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et
+                        dolore magna aliqua. Est pellentesque elit ullamcorper dignissim. Feugiat vivamus at augue eget
+                        arcu. Et
+                        magnis dis parturient montes nascetur ridiculus mus mauris. Tincidunt vitae semper quis lectus
+                        nulla at
+                        volutpat diam. Sit amet consectetur adipiscing elit. Nulla aliquet porttitor lacus luctus
+                        accumsan
+                        tortor. Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque. Sollicitudin ac orci
+                        phasellus egestas tellus. Semper viverra nam libero justo laoreet sit. Nunc eget lorem dolor sed
+                        viverra. Egestas dui id ornare arcu odio ut. Nec feugiat nisl pretium fusce. Augue interdum
+                        velit
+                        euismod in pellentesque massa placerat. Euismod quis viverra nibh cras pulvinar mattis. Amet
+                        tellus cras
+                        adipiscing enim eu turpis. Gravida rutrum quisque non tellus orci ac auctor augue. Ornare aenean
+                        euismod
+                        elementum nisi quis eleifend quam adipiscing vitae. Id aliquet risus feugiat in ante metus
+                        dictum at
+                        tempor. Sit amet consectetur adipiscing elit pellentesque.
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">Some new title</div>
+                <div class="card-body p-3">
                     <div class="content">
                         „Dacă ar fi să mă gândesc cum a apărut rasismul, nu pot decât să caut la rădăcinile omenirii,
                         pentru că de fapt, rasismul nu a luat formă în secolul în care trăim, și nici nu se va stinge cu
@@ -126,8 +134,8 @@
                     </div>
                 </div>
             </div>
-            <div class="box-blur box">
-                <div class="box-inner p-3">
+            <div class="card">
+                <div class="card-body p-3">
                     <div class="content">
                         <i>Dacă ceea ce gândim, vorbim sau simţim este negativ și dacă ne comportăm nepotrivit cu
                             prejudecata pe
