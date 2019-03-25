@@ -74,7 +74,7 @@ div.box-inner img {
     margin: 0;
 }
 
-iframe#video {
+.video {
     display: block;
     /* removes unwanted space around img */
     float: left;
