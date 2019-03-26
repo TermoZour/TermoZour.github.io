@@ -33,7 +33,7 @@ div#cards-container {
     /* THIS IS THE MAX-WIDTH OF THE CARDS */
 }
 
-div.card {
+.card {
     position: relative;
     background: rgba(0, 0, 0, 0.3);
     color: white;
@@ -41,19 +41,10 @@ div.card {
     border-radius: 5px;
     margin: 5px;
 
-    backdrop-filter: blur(15px);
-    animation-name: fade-blur;
-    animation-duration: 5s;
+    backdrop-filter: blur(5px);
 }
 
-/* The inner div for content inside a box */
-
-div.box-inner {
-    position: relative;
-    overflow: hidden;
-}
-
-div.card-header {
+.card-header {
     font-size: 22px;
 }
 
@@ -96,15 +87,4 @@ image {
 
 div.box-inner .content {
     padding: 1%;
-}
-
-/* ANIMATIONS WOOHOO */
-
-@keyframes fade-blur {
-    from {
-        backdrop-filter: blur(0px);
-    }
-    to {
-        backdrop-filter: blur(15px);
-    }
 }
