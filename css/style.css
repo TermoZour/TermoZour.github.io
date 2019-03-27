@@ -9,7 +9,7 @@ body {
     width: 100%;
     height: calc(100% - 56px);
     /* height of the navbar */
-    font-family: Arial, Helvetica, serif;
+    font-family: Arial, Helvetica, serif, Antonellie;
     letter-spacing: 0.02em;
     font-weight: 400;
 }
@@ -51,23 +51,6 @@ div#cards-container {
     font-size: 22px;
 }
 
-div.box-inner .title:after {
-    /* adds a little line under the title, just for fun */
-    content: '';
-    display: block;
-    margin: 10px auto 10px 0;
-    width: 5%;
-    border-top: 2px solid white;
-}
-
-div.box-inner img {
-    display: block;
-    /* removes unwanted space around img */
-    float: left;
-    padding: 0;
-    margin: 0;
-}
-
 .video {
     display: block;
     /* removes unwanted space around img */
@@ -88,6 +71,21 @@ image {
     border-radius: 5px;
 }
 
-div.box-inner .content {
-    padding: 1%;
+.page {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    top: 50%;
+}
+
+@font-face {
+    font-family: "Antonellie";
+    src: url("fonts/Antonellie.otf");
+    src: url("fonts/Antonellie.ttf");
+}
+
+#title_text {
+    font-family: "Antonellie";
+    font-size: 50px;
 }
