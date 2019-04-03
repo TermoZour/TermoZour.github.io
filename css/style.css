@@ -23,19 +23,6 @@ body {
     transform: translate(-50%, -50%);
 }
 
-.container {
-    position: relative;
-    height: auto;
-    width: 100%;
-    margin: 0 auto;
-    /* CENTERS CONTAINER HORIZONTALLY */
-}
-
-div#cards-container {
-    max-width: 100%;
-    /* THIS IS THE MAX-WIDTH OF THE CARDS */
-}
-
 .card {
     position: relative;
     background: rgba(0, 0, 0, 0.3);
