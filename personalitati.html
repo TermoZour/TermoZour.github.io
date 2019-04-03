@@ -5,8 +5,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
@@ -16,11 +18,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-    <div id="header">
+    <div>
         <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
             <a class="navbar-brand disabled" href="index.html">Rasismul</a>
 
@@ -42,131 +43,136 @@
         <source src="videos/bg-video.mp4" type="video/mp4">
     </video>
 
-    <div class="container">
-        <div id="cards-container">
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">Morgan Freeman</div>
-                        <img class="card-img-top" src="images/morgan-freeman-wp.jpg" alt="freeman image">
-                        <div class="card-body p-3">
-                            <p class="card-text">Născut: 1 Iunie 1937</p>
-                            <p class="card-text">Într-un interviu din 2005 cu Mike Wallace la show-ul „60 Minute”,
-                                Morgan Freeman a spus de conceptul „Luna Istoriei Negrilor” că este ridicol și a
-                                susținut că singurul mod de a scăpa de rasism este „să nu mai vorbim despre acest
-                                subiect”. </p>
-                            <iframe class="video" src="https://www.youtube.com/embed/N0p_pQ7PTYU" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
+    <div class="container-fluid mt-4 p-5">
+        <div class="row mb-3">
+            <div class="card-deck pb-3">
+                <div class="card">
+                    <div class="card-header">Morgan Freeman</div>
+                    <img class="card-img-top" src="images/morgan-freeman-wp.jpg" alt="freeman image">
+                    <div class="card-body p-3">
+                        <p class="card-text">Născut: 1 Iunie 1937</p>
+                        <p class="card-text">Într-un interviu din 2005 cu Mike Wallace la show-ul „60 Minute”,
+                            Morgan Freeman a spus de conceptul „Luna Istoriei Negrilor” că este ridicol și a
+                            susținut că singurul mod de a scăpa de rasism este „să nu mai vorbim despre acest
+                            subiect”. </p>
+                        <iframe class="video" src="https://www.youtube.com/embed/N0p_pQ7PTYU" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">Abraham Lincoln</div>
-                        <img class="card-img-top" src="images/lincoln.jpg" alt="lincoln image">
-                        <div class="card-body p-3">
-                            <p class="card-text">Născut: 12 Februarie 1809</p>
-                            <p class="card-text">Președinte al SUA: 4 Martie 1861 - 15 Aprilie 1865</p>
-                            <p class="card-text">
-                                Poziția lui Abraham Lincoln când vine vorba de sclavie este unul din cele mai discutate
-                                aspecte ale vieții sale.
-                                Lincoln deseori afirma opoziția morală față de sclavia în public și privat. Inițial, el
-                                a încercat să aducă sclavia pe cale de dispariție oprind extinderea acesteia pe alte
-                                teritorii ale Statelor Unite ale Americii și prin oferirea de recompense pentru cei ce
-                                eliberau sclavii (o ofertă pe care Congresul a aplicat-o în Washington, D.C.) la
-                                începutul președinției sale. Lincoln a fost de partea Republicanilor și a regulei din
-                                1860 care spunea că sclavia nu are voie să se extindă în teritoriile Statelor Unite. El
-                                era îngrijorat că dispariția sclaviei ar putea bloca „munca neplătită pentru pământ
-                                gratuit”.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">Barack Obama</div>
-                        <img class="card-img-top" src="images/barack-obama.jpg" alt="obama image">
-                        <div class="card-body p-3">
-                            <p class="card-text">Născut: 4 August 1961</p>
-                            <p class="card-text">Președinte al SUA: 20 Ianuarie 2009 - 20 Ianuarie 2017</p>
-                            <p class="card-text">El a fost al 44-lea președinte al SUA și <b>primul președinte
-                                    negru</b>.</p>
-                            <iframe class="video" src="https://www.youtube.com/embed/pss38447z5M" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">Nelson Mandela</div>
-                        <img class="card-img-top" src="images/nelson-mandela.jpg" alt="nelson mandela image">
-                        <div class="card-body p-3">
-                            <p class="card-text">Născut: 18 Iulie 1918</p>
-                            <p class="card-text">El a luptat împotriva statului apartheid, conducând diferite campanii
-                                împotriva lui.</p>
-                            <p class="card-text"></p>Pe parcurs, a trebuit să facă unele alegeri dificile. După un
-                            proces lung din 1956 până în 1961, el a ales să creeze ceea ce era efectiv un grup terorist.
-                            (În 1961, Mandela și alți lideri ai Congresului Național African au format o mișcare
-                            de miliție numită Umkhonto we Sizwe, Mandela fiind comandant-șef.)
-                            <iframe class="video" src="https://www.youtube.com/embed/PyfOrbO0xf4" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">Tupac Shakur</div>
-                        <img class="card-img-top" src="images/tupac.jpg" alt="tupac image">
-                        <div class="card-body p-3">
-                            <p class="card-text"></p> 16 Iunie 1971</p>
-                            <p class="card-text">De la moartea sa în 1996, locul
-                                lui Tupac în panteonul icoanelor
-                                culturale a fost puternic împietrit. Multe cărți și documentare i-au detaliat viața,
-                                cariera
-                                și moartea tragică, în timp ce muzicienii continuă să-i ofere un omagiu influenței sale
-                                în
-                                cântecele lor.</p>
-                            <p class="card-text">În cele din urmă, viața lui Tupac nu este doar o întruchipare a
-                                luptelor, contradicțiilor, creativității și promisiunii unei generații. De asemenea,
-                                servește ca poveste de atenționare. Sfârșitul abrupt al vieții sale a fost o consecință
-                                a atracției succesului, la fel ca atracția străzilor. Sensibilitatea, inteligența și
-                                creativitatea lui au fost măsurate împotriva forțelor externe ostile care l-au torturat
-                                din naștere. Și în timp ce aceste forțe l-au inspirat să se răzvrătească, l-au ispitit,
-                                invitându-l să treacă peste excesele de faimă și celebritate.</p>
-                            <p class="card-text"><i>"God ain’t finished with me yet. [There’s] a path for me, and I make
-                                    mistakes, and I might fall, but I’m gonna get up and I keep trying ‘cause I believe
-                                    in it... It’s still from my soul, my heart."</i></p>
-                            <iframe class="video" src="https://www.youtube.com/embed/iN58DTLloNk" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card">
-                        <div class="card-header">Martin Luther King</div>
-                        <img class="card-img-top" src="images/luther-king.jpg" alt="luther king image">
-                        <div class="card-body p-3">
-                            <p class="card-text">Au trecut mulți ani de la marșul din 1963 de la Washington, unde a fost
-                                emis discursul „I Have a Dream” al lui Martin
-                                Luther King. Cu toate acestea, niciunul dintre noi nu poate spune că am trăit pe deplin
-                                viziunii Dr. King despre un
-                                tărâm în care fiecare persoană ar fi judecată de caracterului lor, nu de culoarea
-                                pielii.</p>
-                            <iframe class="video" src="https://www.youtube.com/embed/3vDWWy4CMhE" frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        </div>
+                <div class="card">
+                    <div class="card-header">Abraham Lincoln</div>
+                    <img class="card-img-top" src="images/lincoln.jpg" alt="lincoln image">
+                    <div class="card-body p-3">
+                        <p class="card-text">Născut: 12 Februarie 1809</p>
+                        <p class="card-text">Președinte al SUA: 4 Martie 1861 - 15 Aprilie 1865</p>
+                        <p class="card-text">
+                            Poziția lui Abraham Lincoln când vine vorba de sclavie este unul din cele mai discutate
+                            aspecte ale vieții sale.
+                            Lincoln deseori afirma opoziția morală față de sclavia în public și privat. Inițial, el
+                            a încercat să aducă sclavia pe cale de dispariție oprind extinderea acesteia pe alte
+                            teritorii ale Statelor Unite ale Americii și prin oferirea de recompense pentru cei ce
+                            eliberau sclavii (o ofertă pe care Congresul a aplicat-o în Washington, D.C.) la
+                            începutul președinției sale. Lincoln a fost de partea Republicanilor și a regulei din
+                            1860 care spunea că sclavia nu are voie să se extindă în teritoriile Statelor Unite. El
+                            era îngrijorat că dispariția sclaviei ar putea bloca „munca neplătită pentru pământ
+                            gratuit”.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="row">
+            <div class="card-deck pb-3">
+                <div class="card">
+                    <div class="card-header">Barack Obama</div>
+                    <img class="card-img-top" src="images/barack-obama.jpg" alt="obama image">
+                    <div class="card-body p-3">
+                        <p class="card-text">Născut: 4 August 1961</p>
+                        <p class="card-text">Președinte al SUA: 20 Ianuarie 2009 - 20 Ianuarie 2017</p>
+                        <p class="card-text">El a fost al 44-lea președinte al SUA și <b>primul președinte
+                                negru</b>.</p>
+                        <iframe class="video" src="https://www.youtube.com/embed/pss38447z5M" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Nelson Mandela</div>
+                    <img class="card-img-top" src="images/nelson-mandela.jpg" alt="nelson mandela image">
+                    <div class="card-body p-3">
+                        <p class="card-text">Născut: 18 Iulie 1918</p>
+                        <p class="card-text">El a luptat împotriva statului apartheid, conducând diferite campanii
+                            împotriva lui.</p>
+                        <p class="card-text"></p>Pe parcurs, a trebuit să facă unele alegeri dificile. După un
+                        proces lung din 1956 până în 1961, el a ales să creeze ceea ce era efectiv un grup terorist.
+                        (În 1961, Mandela și alți lideri ai Congresului Național African au format o mișcare
+                        de miliție numită Umkhonto we Sizwe, Mandela fiind comandant-șef.)
+                        <iframe class="video" src="https://www.youtube.com/embed/PyfOrbO0xf4" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="card-deck pb-3">
+                <div class="card">
+                    <div class="card-header">Tupac Shakur</div>
+                    <img class="card-img-top" src="images/tupac.jpg" alt="tupac image">
+                    <div class="card-body p-3">
+                        <p class="card-text"></p> 16 Iunie 1971</p>
+                        <p class="card-text">De la moartea sa în 1996, locul
+                            lui Tupac în panteonul icoanelor
+                            culturale a fost puternic împietrit. Multe cărți și documentare i-au detaliat viața,
+                            cariera
+                            și moartea tragică, în timp ce muzicienii continuă să-i ofere un omagiu influenței
+                            sale
+                            în
+                            cântecele lor.</p>
+                        <p class="card-text">În cele din urmă, viața lui Tupac nu este doar o întruchipare a
+                            luptelor, contradicțiilor, creativității și promisiunii unei generații. De asemenea,
+                            servește ca poveste de atenționare. Sfârșitul abrupt al vieții sale a fost o
+                            consecință
+                            a atracției succesului, la fel ca atracția străzilor. Sensibilitatea, inteligența și
+                            creativitatea lui au fost măsurate împotriva forțelor externe ostile care l-au
+                            torturat
+                            din naștere. Și în timp ce aceste forțe l-au inspirat să se răzvrătească, l-au
+                            ispitit,
+                            invitându-l să treacă peste excesele de faimă și celebritate.</p>
+                        <p class="card-text"><i>"God ain’t finished with me yet. [There’s] a path for me, and I
+                                make
+                                mistakes, and I might fall, but I’m gonna get up and I keep trying ‘cause I
+                                believe
+                                in it... It’s still from my soul, my heart."</i></p>
+                        <iframe class="video" src="https://www.youtube.com/embed/iN58DTLloNk" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header">Martin Luther King</div>
+                    <img class="card-img-top" src="images/luther-king.jpg" alt="luther king image">
+                    <div class="card-body p-3">
+                        <p class="card-text">Au trecut mulți ani de la marșul din 1963 de la Washington, unde a
+                            fost
+                            emis discursul „I Have a Dream” al lui Martin
+                            Luther King. Cu toate acestea, niciunul dintre noi nu poate spune că am trăit pe
+                            deplin
+                            viziunii Dr. King despre un
+                            tărâm în care fiecare persoană ar fi judecată de caracterului lor, nu de culoarea
+                            pielii.</p>
+                        <iframe class="video" src="https://www.youtube.com/embed/3vDWWy4CMhE" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     </div>
 </body>
 
