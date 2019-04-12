@@ -61,7 +61,7 @@ image {
     position: relative;
     height: calc(100vh - 25%);
     text-align: center;
-    top: 50%;
+    top: 56px;
 }
 
 .page_half{
