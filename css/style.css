@@ -17,8 +17,7 @@ body {
 .videoBg {
     position: fixed;
     left: 50%;
-    min-height: 120%;
-    min-width: 120%;
+    min-height: calc(100vh + 35%);
     top: 50%;
     transform: translate(-50%, -50%);
 }
@@ -60,18 +59,39 @@ image {
 
 .page {
     position: relative;
-    height: 100vh;
+    height: calc(100vh - 25%);
     text-align: center;
     top: 50%;
+}
+
+.page_half{
+    position: relative;
+    height: calc(100vh - 75%);
+    text-align: center;
+    top: 10%;
+}
+
+#title_text {
+    font-family: "Antonellie";
+    font-size: 50px;
+}
+
+.arrow {
+    border: solid white;
+    opacity: 0.25;
+    border-width: 0 10px 10px 0;
+    border-radius: 10px;
+    display: inline-block;
+    padding: 20px;
+}
+
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
 }
 
 @font-face {
     font-family: "Antonellie";
     src: url("fonts/Antonellie.otf");
     src: url("fonts/Antonellie.ttf");
-}
-
-#title_text {
-    font-family: "Antonellie";
-    font-size: 50px;
 }
