@@ -7,8 +7,6 @@ body {
     color: white;
     background: black;
     width: 100%;
-    height: calc(100% - 56px);
-    /* height of the navbar */
     font-family: Arial, Helvetica, serif;
     letter-spacing: 0.02em;
     font-weight: 400;
@@ -59,7 +57,7 @@ image {
 
 .page {
     position: relative;
-    height: calc(100vh - 25% - 56px);
+    height: 100vh;
     text-align: center;
     top: 56px;
 }
@@ -68,12 +66,21 @@ image {
     position: relative;
     height: calc(100vh - 75%);
     text-align: center;
-    overflow: hidden;
 }
 
 #title_text {
     font-size: 50px;
-    padding-top: 70%;
+    padding-top: 15%;
+}
+
+#title_container {
+    position: relative;
+    height: 75%;
+}
+
+#arrow_container {
+    position: relative;
+    height: 25%;
 }
 
 .arrow {
