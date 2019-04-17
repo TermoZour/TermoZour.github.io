@@ -81,6 +81,7 @@ image {
 #arrow_container {
     position: relative;
     height: 25%;
+    bottom: 5%;
 }
 
 .arrow {
