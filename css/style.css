@@ -59,29 +59,20 @@ image {
     position: relative;
     height: 100vh;
     text-align: center;
-    top: 56px;
-}
-
-.page_half{
-    position: relative;
-    height: calc(100vh - 75%);
-    text-align: center;
+    top:
 }
 
 #title_text {
-    font-size: 50px;
-    padding-top: 15%;
+    font-size: 4rem;
+    padding-top: 40%;
 }
 
 #title_container {
-    position: relative;
     height: 75%;
 }
 
 #arrow_container {
-    position: relative;
     height: 25%;
-    bottom: 5%;
 }
 
 .arrow {
